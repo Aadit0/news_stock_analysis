@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 
 stocks = ['AAPL','NVDA','AMD']
 
-end_date = datetime.today()
+end_date = datetime.today() - timedelta (days = 3650) # last 10 years
 start_date = end_date - timedelta (days = 365)
 print(end_date,start_date)
 
